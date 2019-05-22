@@ -9,9 +9,11 @@ public class Divmain {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Desenvolvido por: Gerson Pereira Bueno RA: D827DF-0 Turma: 2SI ");
+		
 		try {
 			Scanner ler = new Scanner(System.in);		
-			Vetores opera = new Vetores();
+			VetoresDiv opera = new VetoresDiv();
 			
 			for (int i=0; i < 15; i++) {
 			    System.out.println("Informe o valor do " + (i+1) + "º elemento de A ");

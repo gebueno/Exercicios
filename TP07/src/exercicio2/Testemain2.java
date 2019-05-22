@@ -9,6 +9,7 @@ public class Testemain2 {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Desenvolvido por: Gerson Pereira Bueno RA: D827DF-0 Turma: 2SI ");
 
 		try {
 			Scanner ler = new Scanner(System.in);		
@@ -23,8 +24,7 @@ public class Testemain2 {
 			
 			for (int i = 0; i < 15; i++) {				
 				System.out.println("O numero digitado é: " + opera.getA()[i] + " o valor em B na "+ (i+1) +"ª posição é: " + opera.getB()[i]);
-			}			
-		
+			}		
 		}
 		
 		 catch (ArrayIndexOutOfBoundsException e) {
@@ -35,7 +35,6 @@ public class Testemain2 {
 		}
 		catch(Exception e) {
 			System.out.println("Ocorreu um erro inesperado! Favor reiniciar o programa.");			
-		}
-		
+		}		
 	}
 }

@@ -28,11 +28,5 @@ public class Vetores2 {
 		b[i]=a[i]*a[i];
 		
 	}	
-	}
-	
-	public void desenvolvedor() {
-		System.out.println("Desenvolvido por Gerson Pereira Bueno RA: D827DF-0 TURMA: 2SI");
-		
-	}
-
+	}	
 }

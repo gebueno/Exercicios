@@ -5,6 +5,7 @@ public class VetoresDiv {
 	private double[] a = new double[15];
 	private double[] b = new double[15];
 	
+	
 	public double[] getA() {
 		return a;
 	}
