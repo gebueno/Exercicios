@@ -1,4 +1,5 @@
 package exercicio5;
+import java.text.DecimalFormat;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class ResultadoMain {
@@ -17,7 +18,10 @@ public class ResultadoMain {
 			System.out.println("O aluno "+ (i+1)+ " Teve a nota: " + MediaAlunos.getNotasAlunos()[i]);		
 		}
 		
-		System.out.println("\nA média total da turma é: " + (MediaAlunos.mediat(MediaAlunos.getNotasAlunos())));
+		DecimalFormat df1 = new DecimalFormat("0.##");
+		String dx = df1.format(MediaAlunos.mediat(MediaAlunos.getNotasAlunos()));
+		
+		System.out.println("\nA média total da turma é: " + (dx));
 		}
 		
 		catch (ArrayIndexOutOfBoundsException e) {

@@ -1,4 +1,5 @@
 package exercicio4;
+import java.text.DecimalFormat;
 
 import java.util.InputMismatchException;
 
@@ -6,17 +7,22 @@ public class ResultadoMain {
 
 	public static void main(String[] args) {
 
-		MediaAlunos conta = new MediaAlunos();
-		
+		MediaAlunos conta = new MediaAlunos();		
 		conta.mediat(conta.getNotasAlunos());
 		
+		
+		  
 		try {
 		
 		for (int i = 0; i < conta.getNotasAlunos().length; i++) {
 			System.out.println("O aluno "+ (i+1)+ " Teve a nota: " + conta.getNotasAlunos()[i]);		
 		}
 		
-		System.out.println("\nA média total da turma é: " + (MediaAlunos.getMediatotal()));
+		DecimalFormat df1 = new DecimalFormat("0.##");
+		String dx = df1.format(conta.getMediatotal());		
+		
+		System.out.println("\nA média total da turma é: " + (dx));
+		
 		}
 		
 		catch (ArrayIndexOutOfBoundsException e) {
