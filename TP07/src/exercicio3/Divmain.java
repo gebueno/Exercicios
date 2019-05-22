@@ -3,8 +3,6 @@ package exercicio3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import exercicio1.Vetores;
-
 public class Divmain {
 
 	public static void main(String[] args) {

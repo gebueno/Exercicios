@@ -1,8 +1,8 @@
-package exercicio4;
+package exercicio5;
 
 public class MediaAlunos {
 	private static double mediatotal;
-    private static double[] notasAlunos = {10, 5, 7, 8, 6, 8, 10, 9, 7, 6, 7, 6, 8, 4, 6};
+    private static double notasAlunos[] = new double [15];
     
 	public static double getMediatotal() {
 		return mediatotal;
@@ -21,11 +21,12 @@ public class MediaAlunos {
 
         double soma = 0;
         for (int i = 0; i < 15; i++) {
-            soma = soma + notasAlunos[i];
-            mediatotal = soma;
+            soma = soma + MediaAlunos.notasAlunos[i];                                 
         }
-        mediatotal = soma / 15;
+        soma = soma / 15;
+        mediatotal = soma;
+        
         return soma;
 }
-	
+
 }

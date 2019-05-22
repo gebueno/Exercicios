@@ -1,13 +1,32 @@
 package exercicio4;
 
+import java.util.InputMismatchException;
+
 public class ResultadoMain {
 
 	public static void main(String[] args) {
 
 		MediaAlunos conta = new MediaAlunos();
 		
-		MediaAlunos.mediat(MediaAlunos.getNotasAlunos());		
-		System.out.println((MediaAlunos.getMediatotal()));
+		conta.mediat(conta.getNotasAlunos());
+		
+		try {
+		
+		for (int i = 0; i < conta.getNotasAlunos().length; i++) {
+			System.out.println("O aluno "+ (i+1)+ " Teve a nota: " + conta.getNotasAlunos()[i]);		
+		}
+		
+		System.out.println("\nA média total da turma é: " + (MediaAlunos.getMediatotal()));
+		}
+		
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("O seu array está estourado"); 
+		}
+		catch (InputMismatchException e) {
+			System.out.println("Digite apenas números reais");
+		}
+		catch(Exception e) {
+			System.out.println("Ocorreu um erro inesperado! Favor reiniciar o programa.");			
+		}
 	}
-
 }
