@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class ResultadoMain {
 
 	public static void main(String[] args) {
-				
+		System.out.println("Desenvolvido por: Gerson Pereira Bueno RA: D827DF-0 Turma: 2SI ");
+		
 		Scanner ler = new Scanner(System.in);
 		
 		try {

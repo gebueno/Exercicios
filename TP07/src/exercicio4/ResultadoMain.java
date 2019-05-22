@@ -6,6 +6,8 @@ import java.util.InputMismatchException;
 public class ResultadoMain {
 
 	public static void main(String[] args) {
+		
+		System.out.println("Desenvolvido por: Gerson Pereira Bueno RA: D827DF-0 Turma: 2SI ");
 
 		MediaAlunos conta = new MediaAlunos();		
 		conta.mediat(conta.getNotasAlunos());
